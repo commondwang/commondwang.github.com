@@ -6,7 +6,7 @@ category:
 tags: []
 ---
 
-{% include JB/setup %}
+
 
 erwerwrwrwrrwrwr
 
@@ -16,11 +16,12 @@ erwerwrwrwrrwrwr
 | col 2 is      |   centered    |   $12 | 
 | zebra stripes |   are neat    |    $1 | 
 
-
-
-
-
-
-
 # Hello
 
+
+
+
+
+{% include JB/setup %}
+
+# 
