@@ -1,1 +1,0 @@
-<div class="ds-thread" data-thread-key="{{ page.id }}" {% if page.id %}data-thread-key="{{ page.id }}"{% endif %} data-title="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" {% if page.url %}data-thread-key="{{ page.url }}"{% endif %}></div>

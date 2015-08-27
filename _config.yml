@@ -23,7 +23,6 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://commondwang.github.io
-markdown : rdiscount
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -85,7 +84,11 @@ JB :
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
-  #        
+  #
+  analytics :
+  provider : baidu
+  baidu : 
+      tracking_id : 'b1ecb657d53dd9af1cf0d54fab44f4e6'        
   
   # Settings for sharing helper. 
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.

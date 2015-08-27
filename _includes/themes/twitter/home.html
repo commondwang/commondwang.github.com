@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/css/carousel.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/js/third-part/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/third-part/google-code-prettify/prettify.js"></script>
+
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"{{ site.JB.comments.duoshuo.short_name }}"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+       || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- load the duoshuo comment plugin end -->
+  </head>
+  <body>
+  	<div class="jumbotron">
+      <div class="container">
+        <h1>Welcome!</h1>
+        <p>This is a personal blog base on github and Jekyll.If you like this template ,you can fork and change it.</p>
+      </div>
+    </div>
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ ASSET_PATH }}/image/github_logo.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>GitHub</h2>
+          <p>My Project</p>
+          <p><a class="btn btn-primary" href="https://github.com/commondwang" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ ASSET_PATH }}/image/blogger_logo.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Blog</h2>
+          <p>My accumulation</p>
+          <p><a class="btn btn-primary" href="/pages/about/index.html" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ ASSET_PATH }}/image/itsme_logo.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>About me</h2>
+          <p>It's me</p>
+          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+    <footer class="footer">
+    	<p class="licence">
+    		{% include JB/is_production %}
+    		{% if is_production != true %}
+      			【This is Private view】
+      		{% endif %}
+			Based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.
+			Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+		</p>
+    </footer>
+    {% include JB/analytics %}
+    <script src="/js/third-part/jquery-1.11.3.min.js"></script>
+    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
