@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"
 description: ""
 category: 
-tags: []
+tags: [hello,test]
 ---
 
 <pre class="prettyprint linenums">
